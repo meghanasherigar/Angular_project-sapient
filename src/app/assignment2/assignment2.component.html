@@ -1,0 +1,12 @@
+
+   <button (click)="changeView('Grid')">grid view</button>
+   <button (click)="changeView('List')">list view</button>
+    <select  (change)="onChange($event)">
+    <option [value]="'Low to High'" >Low to High</option>
+    <option [value]="'High to low'">High to low</option>
+</select>
+<div class="parent"> 
+    <div *ngFor="let item of productList" class="child" [class.showListLayout]="!showGrid">
+        {{item.name}},{{item.price}},{{showGrid}}
+    </div>
+</div>

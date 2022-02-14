@@ -1,0 +1,14 @@
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .child {
+    flex: 1 0 21%; /* explanation below */
+    margin: 5px;
+    height: 100px;
+    background-color: pink;
+  }
+  .showListLayout{
+      flex: 1 0 45%;
+  }
